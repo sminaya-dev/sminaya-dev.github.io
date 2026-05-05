@@ -25,7 +25,7 @@ marked.use({ renderer });
 
 export async function initBlog() {
   try {
-    const res = await fetch("posts/manifest.json");
+    const res = await fetch("/posts/manifest.json");
     if (!res.ok) throw new Error("No manifest found");
     state.posts = await res.json();
     renderList();
@@ -72,7 +72,7 @@ async function loadPost(index) {
   updateControls();
 
   try {
-    const res = await fetch(`posts/${post.filename}`);
+    const res = await fetch(`/posts/${post.filename}`);
     if (!res.ok) throw new Error("Post file missing");
     const text = await res.text();
 
