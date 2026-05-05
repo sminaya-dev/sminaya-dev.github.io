@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Sol Minaya, focusing on Infrastructure Automation, Security, and IT Administration."
+    />
+    <title>Sol Minaya | IT Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      id="hljs-theme"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/powershell.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop" class="backdrop hidden"></div>
+
+    <div class="main-window-container">
+      <div class="os-window main-window">
+        <div class="window-header">
+          <span class="window-title">user@portfolio:~</span>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <svg
+              id="moon-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg
+              id="sun-icon"
+              class="hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="window-content">
+          <div class="hero-section">
+            <h1 class="hero-title">Hi, I'm Sol 👋</h1>
+            <p class="hero-subtitle">
+              IT Enthusiast | Infrastructure Automation | PowerShell Tooling
+            </p>
+          </div>
+
+          <nav class="desktop-nav">
+            <button class="desktop-icon" data-window="skills">
+              <div class="icon-box">⚡</div>
+              <span class="icon-label">Skills</span>
+            </button>
+            <button class="desktop-icon" data-window="projects">
+              <div class="icon-box">💾</div>
+              <span class="icon-label">Projects</span>
+            </button>
+            <button class="desktop-icon" data-window="notes">
+              <div class="icon-box">📝</div>
+              <span class="icon-label">Notes</span>
+            </button>
+            <button class="desktop-icon" data-window="contact">
+              <div class="icon-box">@</div>
+              <span class="icon-label">Contact</span>
+            </button>
+          </nav>
+          <div class="version-tag">
+            v1.0.0 • System Online <br />
+            © 2026 Sol Minaya
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills-modal" class="modal-window hidden" data-id="skills">
+      <div class="window-header draggable-header">
+        <div class="window-title-group">
+          <span class="window-indicator"></span
+          ><span class="window-title">skills/</span>
+        </div>
+        <button class="close-btn">&times;</button>
+      </div>
+      <div class="window-content modal-content">
+        <h2 class="section-title">// Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Infrastructure</h3>
+            <div class="skill-list">
+              <span class="skill-tag">Windows Server 2022</span>
+              <span class="skill-tag">Active Directory (AD DS)</span>
+              <span class="skill-tag">DNS/DHCP</span>
+              <span class="skill-tag">Group Policy (GPO)</span>
+              <span class="skill-tag">VirtualBox</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Automation</h3>
+            <div class="skill-list">
+              <span class="skill-tag">PowerShell</span>
+              <span class="skill-tag">Pester</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Git/Version Control</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Security</h3>
+            <div class="skill-list">
+              <span class="skill-tag">PKI/Certificates (AD CS)</span>
+              <span class="skill-tag">Account Hardening</span>
+              <span class="skill-tag">Least Privilege (RBAC)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects-modal" class="modal-window hidden" data-id="projects">
+      <div class="window-header draggable-header">
+        <div class="window-title-group">
+          <span class="window-indicator"></span
+          ><span class="window-title">projects/</span>
+        </div>
+        <button class="close-btn">&times;</button>
+      </div>
+      <div class="window-content modal-content">
+        <h2 class="section-title">// Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Enterprise Active Directory Lab</h3>
+              <div class="project-links">
+                <a
+                  href="https://github.com/sminaya-dev/ad-home-lab"
+                  target="_blank"
+                  class="project-link"
+                  >GH</a
+                >
+              </div>
+            </div>
+            <p class="project-desc">
+              Multi-site Windows Server 2022 domain with dual DCs, GPO
+              enforcement, gMSA automation, PKI, and a PowerShell user
+              provisioning suite.
+            </p>
+            <div class="project-tech">
+              Active Directory • PowerShell • Windows Server
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">PowerShell Filename Formatter</h3>
+              <div class="project-links">
+                <a
+                  href="https://github.com/sminaya-dev/update-filename-style"
+                  target="_blank"
+                  class="project-link"
+                  >GH</a
+                >
+              </div>
+            </div>
+            <p class="project-desc">
+              Batch rename tool with Title Case / snake_case modes, acronym
+              protection, transactional rollback, and a Pester test suite.
+            </p>
+            <div class="project-tech">PowerShell • Automation</div>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">HashGuard Security Scanner</h3>
+              <div class="project-links">
+                <a
+                  href="https://github.com/sminaya-dev/hashguard-security-scanner"
+                  target="_blank"
+                  class="project-link"
+                  >GH</a
+                >
+              </div>
+            </div>
+            <p class="project-desc">
+              Flask app that checks passwords against breach databases via
+              K-Anonymity — the raw credential never leaves the client.
+            </p>
+            <div class="project-tech">Python • Flask • Security</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="notes-modal" class="modal-window hidden" data-id="notes">
+      <div class="window-header draggable-header">
+        <div class="window-title-group">
+          <span class="window-indicator"></span
+          ><span class="window-title">notes/</span>
+        </div>
+        <button class="close-btn">&times;</button>
+      </div>
+      <div class="window-content modal-content">
+        <h2 class="section-title">// Recent Notes</h2>
+        <ul class="notes-list" id="notes-list-container"></ul>
+      </div>
+    </div>
+
+    <div
+      id="blog-reader-modal"
+      class="modal-window hidden static-modal"
+      data-id="blog-reader"
+    >
+      <div class="window-header draggable-header no-drag">
+        <div class="window-title-group">
+          <span class="window-indicator"></span>
+          <span class="window-title" id="reader-title">post_viewer.exe</span>
+        </div>
+        <div class="window-controls">
+          <button class="nav-btn" id="prev-post-btn" disabled>← Prev</button>
+          <button class="nav-btn" id="next-post-btn" disabled>Next →</button>
+          <button class="close-btn">&times;</button>
+        </div>
+      </div>
+      <div class="window-content modal-content">
+        <article id="markdown-content" class="markdown-body"></article>
+      </div>
+    </div>
+
+    <div id="contact-modal" class="modal-window hidden" data-id="contact">
+      <div class="window-header draggable-header">
+        <div class="window-title-group">
+          <span class="window-indicator"></span
+          ><span class="window-title">contact/</span>
+        </div>
+        <button class="close-btn">&times;</button>
+      </div>
+      <div class="window-content modal-content">
+        <h2 class="section-title">// Contact</h2>
+        <div class="contact-box">
+          <p class="contact-text">Open to new opportunities.</p>
+          <a href="mailto:sminaya@protonmail.com" class="contact-btn"
+            >Send Email</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

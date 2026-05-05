@@ -1,0 +1,20 @@
+[
+  {
+    "id": "lab-architecture",
+    "filename": "lab-architecture.md",
+    "title": "Architecting an Enterprise Active Directory Lab",
+    "date": "Jan 30"
+  },
+  {
+    "id": "powershell-automation",
+    "filename": "powershell-automation.md",
+    "title": "Automating User Onboarding",
+    "date": "Jan 28"
+  },
+  {
+    "id": "site-architecture",
+    "filename": "site-architecture.md",
+    "title": "Engineering this Portfolio Site",
+    "date": "Jan 15"
+  }
+]
