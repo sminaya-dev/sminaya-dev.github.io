@@ -7,7 +7,7 @@ date: Jan 28
 
 In my lab, I needed to create 50+ users for a "Sales" department. Doing this manually in _Active Directory Users and Computers_ (ADUC) was slow and error-prone.
 
-I wrote a PowerShell tool (`New-ADUser-Enterprise.ps1`) to standardize this process.
+I wrote a PowerShell tool (`New-ADUser.ps1`) to standardize this process.
 
 ## Key Features
 
